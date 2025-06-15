@@ -310,7 +310,7 @@ function ProductList({ onHomeClick }) {
             onClick={() => handleAddToCart(plant)}
             disabled={addedToCart[plant.name]}
             style={{
-                backgroundColor: (addedToCart[plant.name]) ? 'grey' : 'green',
+                backgroundColor: (addedToCart[plant.name]) ? 'grey' : 'blue',
                 color: 'white',
                 
               }}
