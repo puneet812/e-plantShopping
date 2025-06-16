@@ -52,6 +52,9 @@ const CartItem = ({ onContinueShopping }) => {
     return totalcost;
   };
 
+  const cartItems = useSelector(state => state.cart.items);
+console.log('Cart items:', cartItems);
+
   return (
     <div className="cart-container">
       <h2 style={{ color: 'black' }}>Total Cart Amount: ${calculateTotalAmount()}</h2>
